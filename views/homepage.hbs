@@ -1,0 +1,75 @@
+{{#if index}}
+<div class="header">
+    <h1> Haomiao Han </h1>
+</div>
+<div class="nav">
+    <a href="/about">About</a>
+    <a href="/portfolio">Portfolio</a>
+    <a href="/contact">Contact</a>
+</div>
+{{else}}
+<div class="navbar">
+    <div class="title">
+        <a href="/">Haomiao Han</a>
+    </div>
+    <div class="links">
+        <a href="/about">About</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/contact">Contact</a>
+    </div>
+</div>
+<div class="content">
+    {{#if about}}
+    <h2>Hello, Nihao and Marhaban</h2>
+    <p>I'm Haomiao, a fourth-year undergraduate student at College of Arts and Science, New York University (NYU). I am double majoring in Computer Science and Middle Eastern Studies.</p>
+    <p>Currently I am interested in creating web applications as well as data analysis and visualization.</p>
+    <p>Click <a href="../assets/HaomiaoHanResume.pdf" class="inline-link">here</a> to download my resume. Feel free to visit my <a class="inline-link" href="https://www.linkedin.com/in/haomiaohan/">LinkedIn</a> and <a class="inline-link" href="https://github.com/haomiaohan">GitHub</a> pages as well.</p>
+    {{/if}}
+    {{#if portfolio}}
+    <h2>Stuff that I've been working on</h2>
+    <div class="portfolio-content">
+        <div class="content-left">
+            <div class="text">
+                <a href="https://rate-my-cards.herokuapp.com/" class="inline-link"><h3>RateMyCards</h3></a>
+                <p>RateMyCards recommends users the best credit cards according to their monthly spending habits and credit scores. This website is created with Node.js/Express, Bootstrap and MongoDB.</p>
+            </div>
+            <div class="image">
+                <a href="https://rate-my-cards.herokuapp.com/"><img src="../img/rmc.png"></a>
+            </div>
+        </div>
+        <hr/>
+        <div class="content-right">
+            <div class="text">
+                <a href="http://i6.cims.nyu.edu/~hh1519/csci0060/assignment3/assignment-3.html" class="inline-link"><h3>New York-LaGaurdia Airport Flight Delays Analysis</h3></a>
+                <p>Analysis of flight arrival delays of the 4 major U.S. airlines at New York's LaGuardia Airport in 2017, using Python's Matplotlib.</p>
+            </div>
+            <div class="image">
+                <a href="http://i6.cims.nyu.edu/~hh1519/csci0060/assignment3/assignment-3.html"><img src="../img/lga.png"></a>
+            </div>
+        </div>
+        <hr/>
+        <div class="content-left">
+            <div class="text">
+                <a href="http://i6.cims.nyu.edu/~hh1519/csci0060/assignment5/index.html" class="inline-link"><h3>Asylum Seekers in EU</h3></a>
+                <p>View the statistics on refugees and other asylum seekers in the European Union for the past decade. This web page is created using Python and SQLite. </p>
+            </div>
+            <div class="image">
+                <a href="http://i6.cims.nyu.edu/~hh1519/csci0060/assignment5/index.html"><img src="../img/asylum.png"></a>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{#if contact}}
+    <div class="contact-text">
+        <h2>How to reach me</h2>
+        <p>You can email me at <a class="inline-link" href="mailto:haomiao@nyu.edu">haomiao@nyu.edu</a>.</p>
+        <hr>
+        <p class="italics">Image: {{desc}}</p>
+        <p class="italics">Refresh the page for a new image ;)</p>
+    </div>
+    <div class="contact-img">
+        <img src="../img/{{img}}.jpg">
+    </div>
+    {{/if}}
+</div>
+{{/if}}

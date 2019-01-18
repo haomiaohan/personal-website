@@ -1,0 +1,122 @@
+@font-face {
+    font-family: AiS;
+    src: url(/fonts/AfternooninStereo.ttf) format('truetype');
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #efefef;
+}
+
+h1 {
+    text-align: center;
+    font-family: AiS, sans-serif;
+    font-size: 5em;
+    font-weight: normal;
+    margin-top: 2em;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.inline-link {
+    color: #007bff;
+}
+
+.inline-link:visited{
+    color: #007bff;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav a {
+    font-size: 1.5em;
+    border-right: 1px solid black;
+    padding:0 10px 0 5px;
+}
+
+.links a {
+    font-size: 1.25em;
+    border-right: 1px solid black;
+    padding:0 10px 0 5px;
+}
+
+.nav a:last-child, .links a:last-child {
+    border-right: none;
+}
+
+.navbar {
+    margin: 6em 8em 4em 8em;
+}
+
+.navbar div {
+    display: inline-block;
+}
+
+.title a{
+    font-family: AiS, sans-serif;
+    font-size: 2.25em;
+}
+
+.links {
+    float: right;
+}
+
+.content {
+    margin: 0 8em;
+}
+
+.content-left, .content-right {
+    margin: 3em 0;
+}
+
+.content-left div, .content-right div {
+    display: inline-block;
+}
+
+.content-left .image {
+    float: right;
+}
+
+.content-right .image {
+    float: left;
+    margin-right: 2.5em;
+}
+
+.content-left .text, .content-right .text {
+    width: 60%;
+}
+
+.contact-img, .contact-text {
+    display: inline-block;
+}
+
+.contact-text {
+    width: 50%;
+}
+
+.contact-img {
+    float: right;
+    margin-bottom: 1em;
+}
+
+.italics {
+    font-style: italic;
+}
+
+
