@@ -5,7 +5,7 @@
 
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #efefef;
+    background-color: #f0f0f0;
 }
 
 h1 {
@@ -81,38 +81,29 @@ a:visited {
     margin: 0 8em;
 }
 
-.content-left, .content-right {
-    margin: 3em 0;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 15em;
+    align-items: center;
 }
 
-.content-left div, .content-right div {
-    display: inline-block;
+.right-text {
+    margin-left: 2.5%;
 }
 
-.content-left .image {
-    float: right;
+.left-text {
+    margin-right: 2.5%;
 }
 
-.content-right .image {
-    float: left;
-    margin-right: 2.5em;
-}
-
-.content-left .text, .content-right .text {
-    width: 60%;
-}
-
-.contact-img, .contact-text {
-    display: inline-block;
+.flex-container-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .contact-text {
-    width: 50%;
-}
-
-.contact-img {
-    float: right;
-    margin-bottom: 1em;
+    margin-right: 5%;
 }
 
 .italics {

@@ -27,7 +27,7 @@ app.get('/portfolio', (req, res) => {
 
 app.get('/contact', (req, res) => {  
     const img = ['berlin', 'marrakech', 'hyderabad', 'keywest', 'delhi', 'istanbul'];
-    const desc = ['Reichstag Building, Berlin, Germamy', 'Marrakech, Morocco', 'Golconda Fort, Hyderabad, TS, India', 'Key West, FL, United States', 'Red Fort, Delhi, India', 'Sultan Ahmed Mosque, Istanbul, Turkey']  
+    const desc = ['Reichstag Building, Berlin, Germamy', 'Marrakech, Morocco', 'Golconda Fort, Hyderabad, India', 'Key West, FL, United States', 'Red Fort, Delhi, India', 'Sultan Ahmed Mosque, Istanbul, Turkey']  
     const random = Math.floor(Math.random() * 6);
     res.render('homepage', {index: undefined, contact: true, img: img[random], desc: desc[random]});
 }); 
