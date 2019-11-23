@@ -5,7 +5,10 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.16.4",
-    "hbs": "^4.0.1"
+    "hbs": "^4.0.1",
+    "mongoose": "^5.7.12",
+    "qr-scanner": "^1.1.1",
+    "qrcode": "^1.4.4"
   },
   "devDependencies": {},
   "scripts": {
