@@ -4,12 +4,8 @@
 }
 
 * {
-    font-family: 'Avenir', sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
 }
 
 h1 {
@@ -72,97 +68,42 @@ a:visited {
     display: inline-block;
 }
 
-.title p{
-    font-family: 'Optima', sans-serif;
+.title a{
+    font-family: AiS, sans-serif;
     font-size: 2.25em;
-}
-
-.title .cent {
-    font-weight: 300;
 }
 
 .links {
     float: right;
 }
 
-.transaction-input {
-    text-align: center;
-    margin: 0 auto;
-    width: 80%;
-}
-
-.transaction-input input, .transaction-input button {
-    display: block;
-}
-
-.transaction-input button {
-    margin: 0 auto;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#transact-text {
-    border-bottom: 1px solid black;
-    border-left: none;
-    border-top: none;
-    border-right: none;
-    background: none;
-    font-size: 40px;
-    text-align: center;
-    margin: 0.5em auto;
-    width: 80%;
-}
-
-#qrcode {
-    text-align: center;
-    margin-top: 2em;
+.content {
+    margin: 0 8em;
 }
 
 .flex-container {
     display: flex;
     flex-direction: row;
-    min-height: 2000px;
+    height: 15em;
+    align-items: center;
 }
 
-.flex-container .left {
-    width: 35%;
-    text-align: center;
+.right-text {
+    margin-left: 2.5%;
 }
 
-.flex-container .left img {
-    margin-top: 50%;
+.left-text {
+    margin-right: 2.5%;
 }
 
-.flex-container .right {
-    width: 65%;
-    background-image: linear-gradient(to bottom right, #6080DE, #31A8E0);
-    background-color: #31A8E0;
+.flex-container-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.center-video {
-    margin: 0 auto;
-    text-align: center;
-}
-
-#preview {
-    height: 500px;
-    width: 500px;
-}
-
-.white-title {
-    color: white;
-    font-family: 'Avenir', sans-serif;
-    margin-top: 5%;
-}
-
-.transactions-display {
-    color: white;
-    padding-left: 5%;
-    padding-right: 5%;
+.contact-text {
+    margin-right: 5%;
 }
 
 .italics {
