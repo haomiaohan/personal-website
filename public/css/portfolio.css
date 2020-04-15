@@ -1,0 +1,43 @@
+label {
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+}
+
+label:hover {
+    cursor: pointer;
+    background: #0062cc;
+}
+
+#clear-filter {
+    background: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.pressed {
+    background: #0062cc;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;  
+}
+
+.hidden {
+    display: none;
+}
+
+#filter-selection {
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+#filter-selection div{
+    display: inline-block;
+}
+
+.image {
+    float: right;
+}

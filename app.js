@@ -32,4 +32,8 @@ app.get('/contact', (req, res) => {
     res.render('homepage', {index: undefined, contact: true, img: img[random], desc: desc[random]});
 }); 
 
+app.get('/*', (req, res) => {
+    res.render('homepage', {index: undefined, notFound: true});
+})
+
 app.listen(process.env.PORT || 5000);

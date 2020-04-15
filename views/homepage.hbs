@@ -29,8 +29,31 @@
     {{#if portfolio}}
     <h2>Stuff that I've been working on</h2>
     <p class="italics">Visit my <a class="inline-link" href="https://github.com/haomiaohan?tab=repositories">GitHub repositories page</a> for the source code of all projects below!</p>
+    <div id="filter-selection">
+        <div>
+            <label for="all" id="clear-filter">Clear Filter/Show All</label>
+            <input type="checkbox" id="all" class="visually-hidden" checked>
+        </div>
+        <div>
+            <label for="webdev" id="webdev-label" class="pressed">Web Development</label>
+            <input type="checkbox" id="webdev" class="visually-hidden" checked>
+        </div>
+        <div>
+            <label for="ml" id="ml-label" class="pressed">Machine Learning</label>
+            <input type="checkbox" id="ml" class="visually-hidden" checked>
+        </div>
+        <div>
+            <label for="dataviz" id="dataviz-label" class="pressed">Data Visualization</label>
+            <input type="checkbox" id="dataviz" class="visually-hidden" checked>
+        </div>
+        <div>
+            <label for="ui" id="ui-label" class="pressed">UI/Design</label>
+            <input type="checkbox" id="ui" class="visually-hidden" checked>
+        </div>
+    </div>
+    <hr />
     <div class="portfolio-content">
-        <div class="flex-container">
+        <div class="flex-container webdev">
             <div class="text left-text">
                 <a href="https://teach-me-web-app.herokuapp.com/home" class="inline-link"><h3>TeachMe</h3></a>
                 <p>TeachMe is a web app that connects creatively skilled individuals with those who wish to learn these skills. TeachMe was built with Node.js/Express, React.js, Bootstrap and MongoDB.</p>
@@ -40,18 +63,18 @@
                 <a href="https://teach-me-web-app.herokuapp.com/home"><img src="../img/teachme.png"></a>
             </div>
         </div>
-        <hr/>
-        <div class="flex-container">
-            <div class="image">
-                <a href="https://rate-my-cards.herokuapp.com/"><img src="../img/rmc.png"></a>
-            </div>
-            <div class="text right-text">
+        <hr class="webdev" />
+        <div class="flex-container webdev">
+            <div class="text left-text">
                 <a href="https://rate-my-cards.herokuapp.com/" class="inline-link"><h3>RateMyCards</h3></a>
                 <p>RateMyCards recommends users the best credit cards according to their monthly spending habits and credit scores. This web app is created with Node.js/Express, Bootstrap and MongoDB.</p>
             </div>
+            <div class="image">
+                <a href="https://rate-my-cards.herokuapp.com/"><img src="../img/rmc.png"></a>
+            </div>
         </div>
-        <hr/>
-        <div class="flex-container">
+        <hr class="webdev" />
+        <div class="flex-container ml">
             <div class="text left-text">
                 <a href="https://github.com/haomiaohan/text-summarizer" class="inline-link"><h3>Auto TL;DR</h3></a>
                 <p>As its name suggests, Auto TL;DR automatically generates summaries for news articles. This program is built with Python, using spaCy.py as a natural language processing toolkit.</p>
@@ -61,17 +84,17 @@
                 <a href="https://github.com/haomiaohan/text-summarizer"><img src="../img/text.png"></a>
             </div>
         </div>
-        <hr/>
-        <div class="flex-container">
-            <div class="image">
-                <a href="../html/flight_delays.html"><img src="../img/lga.png"></a>
-            </div>
-            <div class="text right-text">
+        <hr class="ml" />
+        <div class="flex-container dataviz">
+            <div class="text left-text">
                 <a href="../html/flight_delays.html" class="inline-link"><h3>New York-LaGaurdia Airport Flight Delays Analysis</h3></a>
                 <p>Analysis of flight arrival delays of the 4 major U.S. airlines at New York's LaGuardia Airport in 2017, using Python's Matplotlib.</p>
             </div>
+            <div class="image">
+                <a href="../html/flight_delays.html"><img src="../img/lga.png"></a>
+            </div>
         </div>
-        <hr/>
+        <hr class="dataviz" />
         <!-- <div class="content-right">
             <div class="text">
                 <a href="http://i6.cims.nyu.edu/~hh1519/csci0060/assignment5/index.html" class="inline-link"><h3>Asylum Seekers in EU</h3></a>
@@ -97,7 +120,13 @@
         </div>
     </div>
     {{/if}}
+    {{#if notFound}}
+    <h2>Oops</h2>
+    <p>That's a 404 error - it seems that the page you requested is not available.</p>
+    {{/if}}
 </div>
 {{/if}}
 
+<link rel="stylesheet" type="text/css" href="/css/portfolio.css">
 <script src='/script/script.js'></script>
+<script src='/script/portfolio-filter.js'></script>
