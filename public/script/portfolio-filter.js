@@ -1,3 +1,34 @@
+const warningMsg = document.querySelector('.warning-msg');
+function checkIfNoResult() {
+    const hiddenResults = document.querySelectorAll('.hidden');
+    if (hiddenResults.length >= 14) {
+        warningMsg.classList.remove('hidden');
+    }
+    else {
+        warningMsg.classList.add('hidden');
+    }
+}
+
+function toggleWebdevElem() {
+    webdevLabel.classList.toggle('pressed');
+    webdevElem.forEach(elem => elem.classList.toggle('hidden'));
+}
+
+function toggleMlElem() {
+    mlLabel.classList.toggle('pressed');
+    mlElem.forEach(elem => elem.classList.toggle('hidden'));
+}
+
+function toggleDatavizElem() {
+    datavizLabel.classList.toggle('pressed');
+    datavizElem.forEach(elem => elem.classList.toggle('hidden'));
+}
+
+function toggleUiElem() {
+    uiLabel.classList.toggle('pressed');
+    uiElem.forEach(elem => elem.classList.toggle('hidden'));
+}
+
 const webdevBox = document.querySelector('#webdev');
 const mlBox = document.querySelector('#ml');
 const datavizBox = document.querySelector('#dataviz');
@@ -35,28 +66,14 @@ clearFilter.addEventListener('change', function() {
         uiBox.checked = true;
     }
 });
-
-function toggleWebdevElem() {
-    webdevLabel.classList.toggle('pressed');
-    webdevElem.forEach(elem => elem.classList.toggle('hidden'));
-}
-
-function toggleMlElem() {
-    mlLabel.classList.toggle('pressed');
-    mlElem.forEach(elem => elem.classList.toggle('hidden'));
-}
-
-function toggleDatavizElem() {
-    datavizLabel.classList.toggle('pressed');
-    datavizElem.forEach(elem => elem.classList.toggle('hidden'));
-}
-
-function toggleUiElem() {
-    uiLabel.classList.toggle('pressed');
-    uiElem.forEach(elem => elem.classList.toggle('hidden'));
-}
+clearFilter.addEventListener('change', checkIfNoResult);
 
 webdevBox.addEventListener('change', toggleWebdevElem);
+webdevBox.addEventListener('change', checkIfNoResult);
 mlBox.addEventListener('change', toggleMlElem);
+mlBox.addEventListener('change', checkIfNoResult);
 datavizBox.addEventListener('change', toggleDatavizElem)
+datavizBox.addEventListener('change', checkIfNoResult)
 uiBox.addEventListener('change', toggleUiElem)
+uiBox.addEventListener('change', checkIfNoResult)
+

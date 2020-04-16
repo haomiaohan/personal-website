@@ -41,3 +41,10 @@ label:hover {
 .image {
     float: right;
 }
+
+.warning-msg p {
+    padding: 1%;
+    border: 1px solid #b8daff;
+    background: #cce5ff;
+    border-radius: 0.3rem;
+}

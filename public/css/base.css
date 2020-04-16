@@ -84,7 +84,7 @@ a:visited {
 .flex-container {
     display: flex;
     flex-direction: row;
-    height: 15em;
+    min-height: 15em;
     align-items: center;
     justify-content: space-between;
 }
