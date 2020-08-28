@@ -10,7 +10,7 @@ label:hover {
     background: #0062cc;
 }
 
-#clear-filter {
+#clear-filter, #unselect-all-filters {
     background: none;
     color: #007bff;
     border: 1px solid #007bff;

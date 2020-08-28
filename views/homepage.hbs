@@ -21,9 +21,9 @@
 <div class="content">
     {{#if about}}
     <h2>Hello, Nihao and Marhaban</h2>
-    <p>I'm Haomiao, a M.S. Candidate in Information Systems and Applied Information Sciences (with a concentration in <a class="inline-link" href="https://tech.cornell.edu/programs/masters-programs/jacobs-technion-cornell-dual-ms-connective-media/">Connective Media</a>) at Cornell Tech at Cornell University. I am advised by <a class="inline-link" href="https://people.jacobs.cornell.edu/mor/">Prof. Mor Naaman</a> and <a class="inline-link" href="https://nixdell.com/">Prof. Nicola Dell</a> on my ongoing reserach project centering on misinformation, recommendation systems and social media platforms.</p> 
+    <p>I'm Haomiao, a M.S. Candidate in Information Systems and Applied Information Sciences (with a concentration in <a class="inline-link" href="https://tech.cornell.edu/programs/masters-programs/jacobs-technion-cornell-dual-ms-connective-media/">Connective Media</a>) at Cornell Tech at Cornell University. I am currently advised by <a class="inline-link" href="https://people.jacobs.cornell.edu/mor/">Prof. Mor Naaman</a> and <a class="inline-link" href="https://nixdell.com/">Prof. Nicola Dell</a> on my ongoing reserach project centering on misinformation, recommendation systems and social media platforms.</p> 
     <p>Prior to Cornell, I graduated from the College of Arts and Science, New York University (NYU) with a B.A. degree in <a class="inline-link" href="https://cs.nyu.edu/home/index.html">Computer Science</a> and in <a class="inline-link" href="https://as.nyu.edu/content/nyu-as/as/departments/meis.html">Middle Eastern Studies</a>.</p>
-    <p>I am interested in creating all sorts of programs for social good, designing user-friendly interfaces, and creating data analyses and visualizations. I am currently working at Amazon Web Services as a Software Development Engineer intern for Summer 2020.</p>
+    <p>I am interested in creating all sorts of programs for social good, designing user-friendly interfaces, and creating data analyses and visualizations. For the past summer, I worked at Amazon Web Services as a Software Development Engineer intern.</p>
     <p>Click <a href="../assets/HaomiaoHanResume.pdf" class="inline-link">here</a> to download my resume. Feel free to visit my <a class="inline-link" href="https://www.linkedin.com/in/haomiaohan/">LinkedIn</a> and <a class="inline-link" href="https://github.com/haomiaohan">GitHub</a> pages as well.</p>
     {{/if}}
     {{#if portfolio}}
@@ -31,8 +31,12 @@
     <p class="italics">Visit my <a class="inline-link" href="https://github.com/haomiaohan?tab=repositories">GitHub repositories page</a> for the source code of all projects below!</p>
     <div id="filter-selection">
         <div>
-            <label for="all" id="clear-filter">Clear Filter/Show All</label>
+            <label for="all" id="clear-filter">Clear Filter/Select All</label>
             <input type="checkbox" id="all" class="visually-hidden" checked>
+        </div>
+        <div>
+            <label for="unselect-all" id="unselect-all-filters">Deselect All</label>
+            <input type="checkbox" id="unselect-all" class="visually-hidden">
         </div>
         <div>
             <label for="webdev" id="webdev-label" class="pressed">Web Development</label>
