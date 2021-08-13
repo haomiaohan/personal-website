@@ -26,9 +26,9 @@ app.get('/portfolio', (req, res) => {
 }); 
 
 app.get('/contact', (req, res) => {  
-    const img = ['budapest2', 'marrakech', 'hyderabad', 'madrid', 'delhi', 'istanbul', 'montenegro', 'portland2', 'sarajevo', 'seoul2', 'vienna'];
-    const desc = ['Matthias Church, Budapest, Hungary', 'Marrakech, Morocco', 'Golconda Fort, Hyderabad, India', 'Royal Palace, Madrid, Spain', 'Red Fort, Delhi, India', 'Sultan Ahmed Mosque, Istanbul, Turkey', 'National Museum of Montenegro, Cetinje, Montenegro', 'Portland Head Lighthouse, Portland, Maine, U.S.', 'Outskirts of Sarajevo, Bosnia and Herzegovina', 'Gyeongbokgung Palace, Seoul, Rep. Korea', 'Rathaus (City Hall), Vienna, Austria']  
-    const random = Math.floor(Math.random() * 11);
+    const img = ['budapest2', 'marrakech', 'hyderabad', 'madrid', 'delhi', 'istanbul', 'montenegro', 'portland2', 'sarajevo', 'seoul2', 'vienna', 'charleston', 'portlandor', 'pittsburgh'];
+    const desc = ['Matthias Church, Budapest, Hungary', 'Marrakech, Morocco', 'Golconda Fort, Hyderabad, India', 'Royal Palace, Madrid, Spain', 'Red Fort, Delhi, India', 'Sultan Ahmed Mosque, Istanbul, Turkey', 'National Museum of Montenegro, Cetinje, Montenegro', 'Portland Head Lighthouse, Portland, Maine', 'Outskirts of Sarajevo, Bosnia and Herzegovina', 'Gyeongbokgung Palace, Seoul, Rep. Korea', 'Rathaus (City Hall), Vienna, Austria', 'College of Charleston, Charleston, South Carolina', 'Pioneer Courthouse Square, Portland, Oregon', 'Carnegie Museum of Art, Pittsburgh, Pennsylvania'];  
+    const random = Math.floor(Math.random() * img.length);
     res.render('homepage', {index: undefined, contact: true, img: img[random], desc: desc[random]});
 }); 
 
