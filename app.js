@@ -36,4 +36,9 @@ app.get('/*', (req, res) => {
     res.render('homepage', {index: undefined, notFound: true});
 })
 
-app.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 5000, function(err) {
+    if (err) {
+        console.log(`Error in setting up server: ${err}`);
+    }
+    console.log(`Server listening on port ${process.env.PORT || 5000}`);
+});
