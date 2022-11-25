@@ -21,9 +21,9 @@ app.get('/about', (req, res) => {
     res.render('homepage', {index: undefined, about: true});
 }); 
 
-app.get('/portfolio', (req, res) => {    
-    res.render('homepage', {index: undefined, portfolio: true});
-}); 
+// app.get('/portfolio', (req, res) => {    
+//     res.render('homepage', {index: undefined, portfolio: true});
+// }); 
 
 app.get('/contact', (req, res) => {  
     const img = ['budapest2', 'marrakech', 'hyderabad', 'madrid', 'delhi', 'istanbul', 'montenegro', 'portland2', 'sarajevo', 'seoul2', 'vienna', 'charleston', 'portlandor', 'pittsburgh'];
